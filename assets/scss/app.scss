@@ -1,0 +1,14 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+body{
+    background-color: #D6D6D6;
+    .logo{
+        width: 100px;
+    }
+    .card:hover{
+        transform: scale(1.05);
+        transition: 0.5s;
+    }
+
+}
