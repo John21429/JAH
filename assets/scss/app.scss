@@ -1,14 +1,438 @@
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
 
+@font-face {
+  font-family: 'huninn';
+  font-weight:900;
+  src: url('../../assets/font/jf-openhuninn-2.0.ttf') format('truetype');
+}
 body{
-    background-color: #D6D6D6;
+    background-color:lightgray;
     .logo{
         width: 100px;
     }
-    .card:hover{
-        transform: scale(1.05);
-        transition: 0.5s;
+    .card{
+      overflow: hidden;
+      img{
+        transition: 0.8s;
+      }
+      
+    }
+    .card img:hover{
+      transform: scale(1.1);
+    }
+    .about p{
+        letter-spacing: 8px;
+    }
+    a{
+      color: #5d5d5d;
+    }
+    h1,h2,h3,h4{
+      text-shadow: 0.1rem 0.1rem 0.5rem black;
+    }
+    -webkit-user-select: none; /*Chrome, Opera (older versions), IOS Safari*/
+    -webkit-touch-callout: none; /*Safari*/
+    -moz-user-select: none; /*Mozilla*/
+    -ms-user-select: none; 
+    user-select: none;
+    main{
+      .nav-link{
+        color: #5d5d5d;
+        &:hover{
+          color: black;
+        }
+      }
     }
 
 }
+
+@media screen and (max-width:575px) {
+    .fly{
+        display: none;
+    }
+    .about p{
+        letter-spacing: 6px !important;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:767px) {
+    .fly{
+        display: none;
+    }
+    .about p{
+        letter-spacing: 6px !important;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .fly{
+        transform: rotate(25deg);
+        left: 50%;
+        bottom: -40%;
+        max-width: 170px;
+    }
+    .about p{
+        letter-spacing: 6px !important;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .fly{
+        transform: rotate(25deg);
+        left: 40%;
+        bottom: -20%;
+        max-width: 200px;
+    }
+    .about p{
+        letter-spacing: 6px !important;
+    }
+}
+
+.mySwiper {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+  }
+
+  .swiper-slide {
+    width:100vw;
+    height: 100vh;
+    overflow: hidden;
+    h1,h2,h4{
+      font-family: 'huninn' !important;
+      color:#fff;
+      position: absolute;
+    }
+  }
+  .swiperImg1{
+    background-image: url('../../assets/images/swiper3.jpg');
+  }
+  .swiperImg2{
+    background-image: url('../../assets/images/tvShow.jpg');
+  }
+  .swiperImg3{
+    background-image: url('../../assets/images/swiper6.jpg');
+  }
+  .swiperImg4{
+    background-image: url('../../assets/images/chartImage.jpg');
+  }
+  .swiperImg1, .swiperImg3{
+    // position: absolute;
+    // right:0%;
+    // bottom:10%;
+    // width:80vw;
+    background-size: cover;
+    background-position: center;
+    
+    &::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to left, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.7) 100%);
+    }
+    h1{
+      position: absolute;left:5%; top:20%;
+      font-size: 128px;
+      z-index: 2;
+    }
+    h2{
+      position: absolute;left:15%; top:45%;
+      z-index: 3;
+    }
+    h4{
+      left:6%; top:66%;
+      width:32%;
+      z-index: 4;
+    }
+    
+  }
+
+  .swiperImg2, .swiperImg4{
+    // position: absolute;
+    // left:0%;
+    // bottom:10%;
+    
+    background-size: cover;
+    background-position: center;
+    &::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.8) 100%);
+    }
+    h1{
+      position: absolute;right:5%; top:20%;
+      font-size: 128px;
+      z-index: 2;
+    }
+    h2{
+      position: absolute;right:15%; top:45%;
+      z-index: 3;
+    }
+    h4{
+      right:6%; top:66%;
+      width:32%;
+      z-index: 4;
+    }
+  }
+
+  .mobileSwiper {
+    width: 100%;
+    height: 90vh;
+  }
+
+  .mobileSwiperImg1, .mobileSwiperImg3{
+    /* position: absolute;
+    right:0%;
+    bottom:10%; */
+    /* width:70vw; */
+    height: 95%;
+  }
+
+  .mobileSwiperImg2, .mobileSwiperImg4{
+    /* position: absolute;
+    left:0%;
+    bottom:10%; */
+    /* width: 70vw; */
+    height: 100%;
+  }
+
+  .mobileSwiper .swiper-pagination-bullet {
+    width: 30px; /* 調整切換點點容器的寬度，您可以根據需求調整數值 */
+    height: 30px; /* 調整切換點點容器的高度，您可以根據需求調整數值 */
+  }
+
+  .cardBox{
+    background-color:#5d5d5d;
+    color: #fff;
+    width: 90vw;
+    max-height: 80vh;
+    padding: 2rem;
+    margin: 5rem auto;
+    p{
+      line-height: 3rem;
+    }
+    .bigImg{
+      height: 60%;
+      width: auto;
+      box-sizing: border-box;
+    }
+    .banner img{
+      max-width: 100%;
+      height: 100%;
+    }
+    .cardBanner{
+      max-width: 300px;
+    }
+  }
+  
+
+  
+  @keyframes titleRight {
+    0% {
+      transform: translateX(1000px);
+      opacity: 0.2;
+    }
+    10% {
+      transform: translateX(20px);
+      opacity: 0.7;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes titleLeft {
+    0% {
+      transform: translateX(-1000px);
+      opacity: 0.2;
+    }
+    10% {
+      transform: translateX(-20px);
+      opacity: 0.7;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes textOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes scaleBgi {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+  .swiper-slide-active .swiperImg1, .swiper-slide-active .swiperImg3{
+    animation: titleLeft 3s  ease;
+    animation: scaleBgi 10s  ease;
+    
+    h1{
+      animation: textOpacity 3s  ease;
+    }
+    h1, h4{
+      animation: titleLeft 3s  ease;
+    }
+    h2{
+      animation: titleRight 3s  ease;
+    }
+  }
+
+  .swiper-slide-active .swiperImg2, .swiper-slide-active .swiperImg4{
+    
+    animation: titleRight 3s  ease;
+    animation: scaleBgi 10s  ease;
+    h1{
+      animation: textOpacity 3s  ease;
+    }
+    h1, h4{
+      animation: titleRight 3s  ease;
+    }
+    h2{
+      animation: titleLeft 3s  ease;
+    }
+  }
+
+  
+
+  .fadeInRight {
+    animation: titleRight 3s  ease;
+  }
+  .fadeInLeft {
+    animation: titleLeft 3s  ease;
+  }
+  
+  .textOpacity {
+    opacity: 0;
+    animation: textOpacity 0.5s 0.5s forwards;
+  }
+  .swiper-slide:nth-child(odd){
+    color: #fff
+  }
+
+.banner4{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    /* border: 1px solid red; */
+    .bannerTitle{
+      writing-mode: vertical-lr;
+      font-weight: 900;
+      font-size: 96px;
+      padding: 0%;
+      margin: 0;
+      
+    }
+    ul{
+      margin-top: 40px;
+      width: 70vw;
+      height: 70vh;
+      display: flex;
+      li{
+        background-size: cover;
+        background-position: center;
+        transition: .7s;
+        position: relative;
+        list-style: none;
+      }
+      li:hover{
+          flex-grow: 10;
+          opacity: 1;
+          .insideBackground{
+            filter: blur(0px);
+          }
+          h4{
+            display: block;
+            animation: titleLeft 5s ease;
+          }
+      }
+    }
+    h2{
+      position: absolute;
+      top: -35px;
+      right: 10px;
+      left: 10px;
+      font-size: 54px;
+      z-index: 10;
+      text-shadow: #5d5d5d 1px 5px 10px;
+      color: #fff ;
+    }
+    h4{
+      display: none;
+      position: absolute;
+      bottom: 25%;
+      left: 0%;
+      color: black ;
+      backdrop-filter:blur(8px); /* 模糊效果 */
+      -webkit-backdrop-filter:blur(8px);
+      background: hsla(0,0%,100%,.3);
+      width: 85%;
+      padding: 5% 5% 5% 20%;
+      h4::before {
+        content: '';
+        position: absolute;
+        top:0; right:0; bottom:0; left:0;
+        filter: blur(20px);
+        z-index: -1;
+        margin: -30px;
+      }
+    }
+    .insideBackground{
+      filter: blur(3px);
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+    .b4m1{
+      flex-grow: 1;
+      .m1{
+        background-image: url('../../assets/images/swiper1.png');
+      }
+    }
+    .b4m2{
+      flex-grow: 1;
+      .m2{
+        background-image: url('../../assets/images/hongkong.png');
+      }
+        
+    }
+    .b4m3{
+        flex-grow: 1;
+        .m3{
+          background-image: url('../../assets/images/swiper1.png');
+        }
+    }
+    .b4m4{
+        flex-grow: 1;
+        .m4{
+          background-image: url('../../assets/images/swiper1.png');
+        }
+    }
+
+  
+}
+
+
+

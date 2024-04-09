@@ -5,5 +5,5 @@
 </script>
 
 <template>
-    <ProjectList></ProjectList>
+    <ServiceList></ServiceList>
 </template>

@@ -6,4 +6,5 @@
 
 <template>
     <Hero></Hero>
+    <!-- <Banner></Banner> -->
 </template>
