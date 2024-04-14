@@ -16,5 +16,9 @@ export default defineNuxtConfig({
     'nuxt3-aos'
 
   ],
+  app: {
+    baseURL: process.env.NODE_ENV === 'production' ? '/JAH/' : '/',
+    buildAssetsDir: '/static/'
+  }
 
 })

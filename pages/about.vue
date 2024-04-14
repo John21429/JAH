@@ -44,6 +44,6 @@ const { $bootstrap } = useNuxtApp();
             </div>
         </div>
     </div>
-    
-    
 </template>
+
+

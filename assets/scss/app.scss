@@ -9,8 +9,15 @@
   font-weight:900;
   src: url('../../assets/font/jf-openhuninn-2.0.ttf') format('truetype');
 }
+
+// 定義顏色變量
+$color-background: #cccccc;      // 主背景色
+$color-text-main: #333333;       // 主文本色
+$color-text-secondary: #888888;  // 次要文本色
+$color-white: #ffffff;           // 白色，用於亮點和按鈕
+
 body{
-    background-color:lightgray;
+    background-color:$color-background;
     .logo{
         width: 100px;
     }
@@ -434,5 +441,25 @@ body{
   
 }
 
+// 關於我們
+// mark{
+//   --bs-highlight-bg:#{$color-text-secondary};
+//   --bs-highlight-color:#{$color-white};
+// }
+
+
+// 服務項目
+.accordion {
+  --bs-accordion-active-bg:#{$color-text-secondary};
+  --bs-accordion-active-color: #{$color-white};
+  --bs-accordion-border-color: #{$color-white};
+  --bs-accordion-btn-focus-box-shadow: #{$color-white};
+}
+.nav{
+  --bs-nav-pills-link-active-color:#{$color-white};
+  --bs-nav-pills-link-active-bg:#{$color-text-secondary};
+  --bs-nav-link-color:#{$color-text-main};
+  --bs-nav-link-hover-color:#{$color-text-secondary};
+}
 
 
