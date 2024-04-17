@@ -12,8 +12,8 @@ function changeType(num) {
         <h1 class="lh-lg text-decoration-underline text-light">多元＋客製化的服務項目</h1>
         <h5 class="lh-base">” 讓我們用心打造專屬你的<strong class="text-decoration-underline">最佳方案</strong>”</h5>
     </div>
-    <div class="row p-5 m-3">
-        <div class="accordion col-md-3 rounded p-3" id="accordionExample">
+    <div class="row p-lg-5 m-lg-3 p-2">
+        <div class="accordion col-lg-3 col-md-5 rounded p-lg-3" id="accordionExample">
             <h2 class="accordion-header text-center bg-secondary rounded-top lh-lg text-light">服務項目</h2>
             <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -128,9 +128,10 @@ function changeType(num) {
                 </div>
             </div>
         </div>
-        <div class="tab-content col-md-9" id="pills-tabContent">
+        <div class="tab-content col-lg-9 col-md-7" id="pills-tabContent">
             <!-- 影像 -->
             <div v-show="showType == 0" class="tab-pane fade show active" id="pills-video-1" role="tabpanel" aria-labelledby="pills-video-1-tab" tabindex="0">
+                <!-- 廣告製作 -->
                 <h2 class="lh-lg text-light">數位廣告製作</h2>
                 <div class="row">
                     <div class="col-sm-12 col-md-6"><img src="~assets/images/swiper1.png" class="img-fluid" alt=""/></div>
@@ -143,7 +144,7 @@ function changeType(num) {
                     </div>
                     <div class="col-12 text-center p-5"><h6 class="lh-lg">” 我們提供全方位的專業製片服務，從客戶溝通、影片設計、編排到預算規劃，都秉持最專業的態度執行。 ”<br>” 我們相信，只有每個環節都達到完美，客戶才能展現理想中的影片效果。 ”</h6></div>
                     <div class="col-sm-12 col-md-6 p-3">
-                        <h5 class="mb-4">量身定做</h5>
+                        <h5 class="my-4">量身定做</h5>
                         <p class="lh-lg">無論是小型店家還是大型企業，只要您有需求，我們便會量身定制影片製作計劃，確保滿足您的期望，並超過一百分。</p>
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
                     </div>
@@ -154,49 +155,58 @@ function changeType(num) {
                 </div>
             </div>
             <div v-show="showType == 0" class="tab-pane fade" id="pills-video-2" role="tabpanel" aria-labelledby="pills-video-2-tab" tabindex="0">
+                <!-- 短影音 -->
                 <h2 class="lh-lg text-light">短影音</h2>
                 <div class="row">
-                    <div class="col-sm-12 col-md-6"><img src="~assets/images/swiper2.png" class="img-fluid" alt=""/></div>
-                    <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-between">
-                        <h5>腳本到銀幕，專業創意無限</h5>
-                        <h4 class="lh-lg text-light">捕捉每一刻，創造無限可能</h4>
-                        <h5>從策劃到剪輯，一氣呵成</h5>
-                        <h4 class="lh-lg text-light">觀點獨特，每一剪都是藝術</h4>
-                        <h5>精彩後製，讓畫面說話</h5>
-                    </div>
-                    <div class="col-12 text-center p-5"><h6 class="lh-lg">” 我們的專業團隊搭配頂尖設備，精心製作每部作品，從腳本到拍攝，確保完美呈現品牌精神。 ”<br>” 我們相信，只有每個環節都達到完美，客戶才能展現理想中的影片效果。 ”</h6></div>
+                    <!-- <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-between">
+                        <small>#腳本到銀幕，專業創意無限</small>
+                        <small>#捕捉每一刻，創造無限可能</small>
+                        <small>#從策劃到剪輯，一氣呵成</small>
+                        <small>#觀點獨特，每一剪都是藝術</small>
+                        <small>#精彩後製，讓畫面說話</small>
+                    </div> -->
+                    <div class="col-12 pe-lg-3 pb-lg-3"><h5 class="lh-lg">” 我們的專業團隊搭配頂尖設備，精心製作每部作品，從腳本到拍攝，確保完美呈現品牌精神。 ”<br>” 我們相信，只有每個環節都達到完美，客戶才能展現理想中的影片效果。 ”</h5></div>
                     <div class="col-sm-12 col-md-6 p-3">
-                        <h5 class="mb-4">行銷的關鍵工具</h5>
-                        <p class="lh-lg">在這個快節奏的數位時代，短影音已經成為傳達信息、吸引觀眾、並加強品牌影響力的關鍵工具。我們專注於提供全方位的短影音製作服務，從創意發想、腳本撰寫、拍攝製作到後期剪輯和效果處理，每一步都追求完美。</p>
-                        <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
+                        <h5 class="">關鍵工具</h5>
+                        <small class="text-body-secondary">#腳本到銀幕，專業創意無限</small>
+                        <p class="lh-lg mt-2">在這個快節奏的數位時代，短影音已經成為傳達信息、吸引觀眾、並加強品牌影響力的關鍵工具。我們專注於提供全方位的短影音製作服務，從創意發想、腳本撰寫、拍攝製作到後期剪輯和效果處理，每一步都追求完美。</p>
+                        <img src="~assets/images/serviceList/shortVideo.jpg" class="img-fluid" alt=""/>
                     </div>
                     <div class="col-sm-12 col-md-6 p-3">
-                        <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
-                        <h5 class="mb-4">絕佳的夥伴</h5>
-                        <p class="lh-lg">無論是推廣企業品牌，還是講述一個引人注目的故事，我們的短影音製作服務都能幫助您的品牌在競爭激烈的市場中脫穎而出。我們不僅僅是您的服務提供商，更是您在視覺創意旅程中的夥伴。讓我們一起攜手，將您的想法轉化為能夠觸動人心的影片，共創卓越成果。</p>
+                        <img src="~assets/images/serviceList/shortVideo1.jpg" class="img-fluid" alt=""/>
+                        <h5 class="mt-3">絕佳夥伴</h5>
+                        <small class="text-body-secondary">#從策劃到剪輯，一氣呵成</small>
+                        <p class="lh-lg mt-2">無論是推廣企業品牌，還是講述一個引人注目的故事，我們的短影音製作服務都能幫助您的品牌在競爭激烈的市場中脫穎而出。我們不僅僅是您的服務提供商，更是您在視覺創意旅程中的夥伴。讓我們一起攜手，將您的想法轉化為能夠觸動人心的影片，共創卓越成果。</p>
                     </div>
                 </div>
             </div>
             <div v-show="showType == 0" class="tab-pane fade" id="pills-video-3" role="tabpanel" aria-labelledby="pills-video-3-tab" tabindex="0">
                 <h2 class="lh-lg text-light">產品功能影音</h2>
                 <div class="row">
-                    <div class="col-sm-12 col-md-6"><img src="~assets/images/swiper4.png" class="img-fluid" alt=""/></div>
-                    <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-between">
-                        <h5>精準捕捉，展現產品力</h5>
-                        <h4 class="lh-lg text-light">從規劃到實現，我們精通每一步</h4>
+                    <div class="col-12">
+                        <img src="~assets/images/swiper4.png" class="img-fluid" alt=""/>
+                        <div class="d-flex">
+                            <small class="text-body-secondary me-4">#每一個產品，都有一個故事</small>
+                            <small class="text-body-secondary me-4 d-none d-lg-block">#精細剪輯，功能一目了然</small>
+                            <small class="text-body-secondary me-4 d-none d-lg-block">#功能展示，讓你的產品說話</small>
+                        </div>
+                    </div>
+                    <!-- <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-between">
+                        <h5></h5>
+                        <h4 class="lh-lg text-light"></h4>
                         <h5>每一個產品，都有一個故事</h5>
                         <h4 class="lh-lg text-light">精細剪輯，功能一目了然</h4>
-                        <h5>功能展示，讓你的產品說話</h5>
-                    </div>
-                    <div class="col-12 text-center p-5"><h6 class="lh-lg">” 從微妙的產品細節到整體應用演示，我們都能夠提供高質量的視覺表達，幫助您的產品在市場上脫穎而出。 ”<br>” 結合最先進的攝影設備和剪輯技術，確保每個功能都能被清晰且吸引人地呈現。 ”</h6></div>
+                        <h5></h5>
+                    </div> -->
+                    <div class="col-12 text-center p-3 p-lg-5"><h6 class="lh-lg">” 從微妙的產品細節到整體應用演示，我們都能夠提供高質量的視覺表達，幫助您的產品在市場上脫穎而出。 ”<br>” 結合最先進的攝影設備和剪輯技術，確保每個功能都能被清晰且吸引人地呈現。 ”</h6></div>
                     <div class="col-sm-12 col-md-6 p-3">
-                        <h5 class="mb-4">讓產品說話</h5>
+                        <h5 class="mb-3">讓產品說話</h5>
                         <p class="lh-lg">在競爭激烈的市場中，產品功能影片是展示您產品優勢的關鍵。我們提供專業的產品功能影片製作服務，從概念規劃、腳本撰寫到影片拍攝和後期製作，每一步驟都致力於精確展現您產品的獨特功能和應用。</p>
-                        <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
+                        <img src="~assets/images/serviceList/product.jpg" class="img-fluid" alt=""/>
                     </div>
                     <div class="col-sm-12 col-md-6 p-3">
-                        <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
-                        <h5 class="mb-4">展現產品力</h5>
+                        <img src="~assets/images/serviceList/product1.jpg" class="img-fluid" alt=""/>
+                        <h5 class="my-3">展現產品力</h5>
                         <p class="lh-lg">無論您是希望解釋複雜的技術細節，還是展示產品的實際應用，我們都能提供量身定製的解決方案。讓我們協助您通過強有力的視覺敘事，增強客戶對產品功能的理解和興趣，從而推動銷售和品牌忠誠度。</p>
                     </div>
                 </div>
@@ -204,23 +214,24 @@ function changeType(num) {
             <div v-show="showType == 0" class="tab-pane fade" id="pills-video-4" role="tabpanel" aria-labelledby="pills-video-4-tab" tabindex="0">
                 <h2 class="lh-lg text-light">活動側拍</h2>
                 <div class="row">
-                    <div class="col-sm-12 col-md-6"><img src="~assets/images/liveShow.jpg" class="img-fluid" alt=""/></div>
-                    <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-between">
-                        <h5>捕捉每一瞬間，記錄無限回憶</h5>
-                        <h4 class="lh-lg text-light">活動的每個角落，我們都細心記錄</h4>
-                        <h5>從前期策劃到後期呈現，精彩無遺</h5>
-                        <h4 class="lh-lg text-light">紀錄影片，完美捕捉您的重要時刻</h4>
-                        <h5>每個畫面，都是故事的開始</h5>
+                    <h5 class="text-center mb-3">捕捉每一瞬間，記錄無限回憶</h5>
+                    <div class="col-12">
+                        <div class="row">
+                            <h4 class="text-light col-1 d-none d-lg-block" style="writing-mode:vertical-rl;">活動的每個角落，我們都細心記錄</h4>
+                            <img src="~assets/images/liveShow.jpg" class="img-fluid col-lg-8" alt=""/>
+                            <h4 class="text-light col-1 d-none d-lg-block" style="writing-mode:vertical-rl;">紀錄影片，完美捕捉您的重要時刻</h4>
+                        </div>
                     </div>
+                    <h5 class="text-center mt-3">從前期策劃到後期呈現，精彩無遺</h5>
                     <div class="col-12 text-center p-5"><h6 class="lh-lg">” 選擇我們，讓您的每一場活動都留下動人的視覺記錄，珍藏每一刻的感動與價值 ”<br>” 您的活動影片將變成一部藝術作品，不僅能回味無窮，更是將您的品牌故事分享給更廣泛觀眾的最佳方式。 ”</h6></div>
                     <div class="col-sm-12 col-md-6 p-3">
-                        <h5 class="mb-4">紀錄感動的瞬間</h5>
+                        <h5 class="my-4">紀錄感動的瞬間</h5>
                         <p class="lh-lg">無論是大型企業活動、家庭聚會還是公共表演，我們都能確保每一個重要瞬間都被紀錄下來。從動態的舞台表演到觀眾的互動反應，每一個鏡頭都傳達著活動的精神與情感。</p>
-                        <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
+                        <img src="~assets/images/serviceList/boxing.jpg" class="img-fluid" alt=""/>
                     </div>
                     <div class="col-sm-12 col-md-6 p-3">
-                        <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
-                        <h5 class="mb-4">捕捉關鍵的時刻</h5>
+                        <img src="~assets/images/serviceList/activityShow.jpg" class="img-fluid" alt=""/>
+                        <h5 class="my-4">捕捉關鍵的時刻</h5>
                         <p class="lh-lg">活動側拍紀錄影片不僅是捕捉事件，更是記錄情感與故事的藝術。我們提供從預規劃、腳本發展到影片拍攝及後期製作的全程專業服務，專注於捕捉那些定義您活動的關鍵時刻</p>
                     </div>
                 </div>
@@ -238,13 +249,13 @@ function changeType(num) {
                     </div>
                     <div class="col-12 text-center p-5"><h6 class="lh-lg">” 選擇我們讓您的創意不再有界限，將您的想法轉化為影響深遠的視覺作品，讓每個觀眾都留下深刻的印象。 ”<br>” 精心的剪輯與特效加工將使您的節目在競爭激烈的市場中脫穎而出，吸引廣大觀眾並贏得他們的心。 ”</h6></div>
                     <div class="col-sm-12 col-md-6 p-3">
-                        <h5 class="mb-4">精彩可期</h5>
+                        <h5 class="my-4">精彩可期</h5>
                         <p class="lh-lg">一個出色的節目製作可以顯著提升您的品牌形象並吸引觀眾。我們專業的節目製作服務涵蓋了從創意發想、腳本撰寫到場景設計、拍攝及後期剪輯等所有階段，旨在為您提供一站式的解決方案。</p>
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
                     </div>
                     <div class="col-sm-12 col-md-6 p-3">
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
-                        <h5 class="mb-4">完美團隊</h5>
+                        <h5 class="my-4">完美團隊</h5>
                         <p class="lh-lg">我們的團隊由經驗豐富的製片人、編劇、導演、攝影師及後期製作人員組成，他們對於每一個細節都追求完美，確保每一個鏡頭都能精確地表達預期的情感與信息。無論是現場直播、訪談節目、教育性節目或娛樂性節目，我們都能根據您的具體需求提供量身定制的服務。</p>
                     </div>
                 </div>
@@ -264,13 +275,13 @@ function changeType(num) {
                     </div>
                     <div class="col-12 text-center p-5"><h6 class="lh-lg">” 團隊擁有豐富的市場活動經驗，能夠根據您的品牌需求和市場趨勢，設計具有創新性和吸引力的地推活動。 ”<br>” 提供全面的規劃服務，從活動策劃、人員配置到腳本設計，每一步都精心策略，確保您的品牌信息精確傳達給目標群體。 ”</h6></div>
                     <div class="col-sm-12 col-md-6 p-3">
-                        <h5 class="mb-4">全方位推廣設計</h5>
+                        <h5 class="my-4">全方位推廣設計</h5>
                         <p class="lh-lg">在當今市場營銷的多元化世界中，地推活動以其直接與消費者互動的能力脫穎而出。無論是產品推介、品牌宣傳還是特定節日促銷，我們都能提供包括場地選擇、人員培訓、活動物料製作和實時反饋追蹤的全方位服務。</p>
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
                     </div>
                     <div class="col-sm-12 col-md-6 p-3">
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
-                        <h5 class="mb-4">激發品牌力</h5>
+                        <h5 class="my-4">激發品牌力</h5>
                         <p class="lh-lg">加上我們獨特的腳本設計，確保每次互動都能激發消費者的興趣與參與感，從而增強品牌忠誠度和市場影響力。選擇我們的地推活動服務，讓您的品牌在激烈的市場競爭中脫穎而出，達到最佳的推廣效果。</p>
                     </div>
                 </div>
@@ -288,13 +299,13 @@ function changeType(num) {
                     </div>
                     <div class="col-12 text-center p-5"><h6 class="lh-lg">” 我們擁有多位經驗豐富的主持人，他們不僅具有出色的語言表達能力和舞台掌控力， ”<br>” 還能夠根據不同活動的特點和需求，進行個性化的互動和引導，確保活動氛圍活躍，信息傳達有效。 ”</h6></div>
                     <div class="col-sm-12 col-md-6 p-3">
-                        <h5 class="mb-4">經驗豐富</h5>
+                        <h5 class="my-4">經驗豐富</h5>
                         <p class="lh-lg">從企業年會、產品發布會到大型娛樂活動，無論您的需求如何，我們都能提供專業的規劃建議和執行方案，確保您的活動流暢且印象深刻。選擇我們的主持活動規劃服務，讓您的每一場活動都成為與眾不同的亮點，獲得參與者的一致好評。</p>
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
                     </div>
                     <div class="col-sm-12 col-md-6 p-3">
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
-                        <h5 class="mb-4">行雲流水</h5>
+                        <h5 class="my-4">行雲流水</h5>
                         <p class="lh-lg">一場成功的活動離不開出色的主持人和周到的活動規劃。我們提供一站式的活動主持服務，從主持人選用、活動流程設計到現場執行監督，我們的專業團隊確保每一個細節都達到完美。</p>
                     </div>
                 </div>
@@ -312,13 +323,13 @@ function changeType(num) {
                     </div>
                     <div class="col-12 text-center p-5"><h6 class="lh-lg">” 深入理解市場趨勢和品牌需求，能夠根據您的獨特定位和目標觀眾，量身定制發佈會的每個環節。 ”<br>” 從活動主題的創意發想到現場執行的細節管理，我們都將保證活動的流暢與專業，確保信息的有效傳達。”</h6></div>
                     <div class="col-sm-12 col-md-6 p-3">
-                        <h5 class="mb-4">形象打造</h5>
+                        <h5 class="my-4">形象打造</h5>
                         <p class="lh-lg">一場精彩的品牌發佈會能夠顯著提升品牌形象並吸引公眾的目光。我們提供全面的品牌發佈會活動規劃服務，包括主持人選用、司儀流程規劃以及腳本設計，旨在為您的品牌創造令人難忘的發佈體驗。</p>
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
                     </div>
                     <div class="col-sm-12 col-md-6 p-3">
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
-                        <h5 class="mb-4">精心設計</h5>
+                        <h5 class="my-4">精心設計</h5>
                         <p class="lh-lg">我們選用具有豐富經驗和高度專業素質的主持人，搭配精心設計的腳本和流程，使得每一場發佈會都能精準地展現品牌的核心價值與未來願景。選擇我們的服務，讓您的品牌發佈會成為業界的焦點，獲得成功與回響。</p>
                     </div>
                 </div>
@@ -336,13 +347,13 @@ function changeType(num) {
                     </div>
                     <div class="col-12 text-center p-5"><h6 class="lh-lg">” 能夠根據您的具體需求，選擇最合適的場地並進行創意佈置，從而符合活動主題並增強活動的吸引力。 ”<br>” 無論是新產品發布、重大合作公告還是其他重要典禮，我們都會根據活動性質設計合適的流程，確保活動的順利進行。 ”</h6></div>
                     <div class="col-sm-12 col-md-6 p-3">
-                        <h5 class="mb-4">印象加分</h5>
+                        <h5 class="my-4">印象加分</h5>
                         <p class="lh-lg">在當代媒體密集的時代，一場精心規劃的記者會或典禮是展現企業形象和傳遞關鍵信息的重要方式。我們提供全面的記者會和典禮規劃服務，涵蓋流程設計、場地選擇、場地佈置以及腳本撰寫，確保您的活動能夠吸引媒體關注並留下深刻印象。</p>
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
                     </div>
                     <div class="col-sm-12 col-md-6 p-3">
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
-                        <h5 class="mb-4">話題焦點</h5>
+                        <h5 class="my-4">話題焦點</h5>
                         <p class="lh-lg">我們的專業編劇將為您的活動量身打造腳本，從開場白到活動高潮，每一個細節都旨在強化信息傳達和觀眾互動。選擇我們的服務，讓您的記者會或典禮成為話題中心，有效傳達您的品牌故事，達到最佳的公關效果。</p>
                     </div>
                 </div>
@@ -351,22 +362,22 @@ function changeType(num) {
                 <h2 class="lh-lg text-light">尾牙 / 員旅</h2>
                 <div class="row">
                     <div class="col-sm-12 col-md-6"><img src="~assets/images/liveShow.jpg" class="img-fluid" alt=""/></div>
-                    <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-between">
+                    <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-between p-sm-4 text-sm-center">
                         <h5>尾牙盛宴，精彩由我們規劃</h5>
                         <h4 class="lh-lg text-light">精選場地，專業佈置，讓員工旅遊更難忘</h4>
                         <h5>每一場活動，都是一次團隊凝聚的旅程</h5>
                         <h4 class="lh-lg text-light">打造非凡體驗，讓員工旅遊變成傳奇</h4>
                         <h5>從場地到娛樂，精心規劃您的完美尾牙</h5>
                     </div>
-                    <div class="col-12 text-center p-5"><h6 class="lh-lg">” 豐富的活動策劃經驗，能夠根據您的企業文化和特定需求，量身定制每一場活動。 ”<br>” 提供最適合的場地選擇和創意佈置方案，營造出既舒適又激勵人心的環境。 ”</h6></div>
+                    <div class="col-12 text-md-center p-md-5 p-sm-1 "><h6 class="lh-lg">” 豐富的活動策劃經驗，能夠根據您的企業文化和特定需求，量身定制每一場活動。 ”<br>” 提供最適合的場地選擇和創意佈置方案，營造出既舒適又激勵人心的環境。 ”</h6></div>
                     <div class="col-sm-12 col-md-6 p-3">
-                        <h5 class="mb-4">團隊凝聚</h5>
+                        <h5 class="my-4">團隊凝聚</h5>
                         <p class="lh-lg">尾牙和員工旅遊不僅是放鬆和慶祝的時刻，更是加強員工關係和提升團隊凝聚力的重要活動。我們提供一站式的活動策劃服務，從主持人選用、活動設計到場地選用和場地佈置，確保每一個細節都完美無缺。</p>
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
                     </div>
                     <div class="col-sm-12 col-md-6 p-3">
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
-                        <h5 class="mb-4">回味無窮</h5>
+                        <h5 class="my-4">回味無窮</h5>
                         <p class="lh-lg">專業主持人將確保活動流程順暢且充滿樂趣，從互動遊戲到頒獎典禮，每一環都讓參與者感到愉快和值得。選擇我們的服務，讓您的尾牙和員工旅遊成為員工間交流、共融的美好時刻，進一步提升員工的幸福感和對公司的忠誠度。</p>
                     </div>
                 </div>
@@ -387,13 +398,13 @@ function changeType(num) {
                     </div>
                     <div class="col-12 text-center p-5"><h6 class="lh-lg">” 我們的專業導播團隊具有豐富的大型活動直播經驗，精通各種直播技巧，能夠即時捕捉並突出比賽中的高光時刻。 ”<br>” 混音和導播技術，每一樣都是精心選擇，以保證影像和聲音的質量達到最高標準。 ”</h6></div>
                     <div class="col-sm-12 col-md-6 p-3">
-                        <h5 class="mb-4">高光時刻</h5>
+                        <h5 class="my-4">高光時刻</h5>
                         <p class="lh-lg">在電競的世界裡，每一秒都充滿了轉折與激動人心的瞬間。我們提供專業的電競賽事直播服務，配備最先進的高級設備和專業導播團隊，確保直播過程中零延遲、無縫接軌，讓觀眾無論身在何處都能感受到賽場上的每一分鐘激情與緊張。</p>
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
                     </div>
                     <div class="col-sm-12 col-md-6 p-3">
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
-                        <h5 class="mb-4">完美呈現</h5>
+                        <h5 class="my-4">完美呈現</h5>
                         <p class="lh-lg">選擇我們的電競賽事直播工程，您的比賽將轉化為一場視覺盛宴，吸引更多的觀眾，提高賽事的關注度和影響力。無論是國際賽事還是地方比賽，我們都能提供量身定制的直播解決方案，確保每一場賽事都能完美呈現，滿足所有電競愛好者的期待。</p>
                     </div>
                 </div>
@@ -411,13 +422,13 @@ function changeType(num) {
                     </div>
                     <div class="col-12 text-center p-5"><h6 class="lh-lg">” 您的品牌發佈會將轉化為一場全球性的視覺盛宴，吸引更廣泛的觀眾群，增強品牌影響力。 ”<br>” 在競爭激烈的市場中脫穎而出。讓我們助力您的品牌，實現信息的全球傳播。 ”</h6></div>
                     <div class="col-sm-12 col-md-6 p-3">
-                        <h5 class="mb-4">全球直播</h5>
+                        <h5 class="my-4">全球直播</h5>
                         <p class="lh-lg">在今日的數字化時代，一場成功的品牌發佈會不僅需要出色的內容，更需技術的支持來確保信息的有效傳遞。我們提供專業的品牌發佈會直播工程服務，從高級設備選擇到專業導播操作，每一環節都致力於將您的品牌以最佳方式展現給全球觀眾。</p>
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
                     </div>
                     <div class="col-sm-12 col-md-6 p-3">
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
-                        <h5 class="mb-4">頂級設備</h5>
+                        <h5 class="my-4">頂級設備</h5>
                         <p class="lh-lg">使用最新的直播技術和零延遲的傳輸設備，我們保證直播過程中的每一個畫面都清晰流暢，無論是產品展示還是重要發言，都能精確地捕捉並傳達給觀眾。我們的專業團隊具備豐富的直播經驗，能夠根據您的具體需求，提供定制化的直播策劃和執行方案。</p>
                     </div>
                 </div>
@@ -435,13 +446,13 @@ function changeType(num) {
                     </div>
                     <div class="col-12 text-center p-5"><h6 class="lh-lg">” 我們的直播工程服務提供一流的專業導播、高級設備及精確的流程規劃。 ”<br>” 確保您的活動在每一個細節上都能達到最高標準。 ”</h6></div>
                     <div class="col-sm-12 col-md-6 p-3">
-                        <h5 class="mb-4">先進技術</h5>
+                        <h5 class="my-4">先進技術</h5>
                         <p class="lh-lg">通過使用最先進的攝影設備和編導技術，我們能夠捕捉並傳達每一個重要瞬間，無論是重大公告還是活動亮點，都將被完美記錄並傳播到全世界。選擇我們的直播工程服務，讓您的典禮和記者會達到新的高度，廣泛影響並吸引全球觀眾。</p>
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
                     </div>
                     <div class="col-sm-12 col-md-6 p-3">
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
-                        <h5 class="mb-4">經驗豐富</h5>
+                        <h5 class="my-4">經驗豐富</h5>
                         <p class="lh-lg">我們的專業團隊擁有直播大型活動的經驗，從活動前的準備到活動實施的每一步，都有詳盡的計劃和備份方案。無論是場地的選擇、視覺設計還是技術支持，我們都能提供最優質的服務，確保直播過程中的畫面和音質清晰、流暢，無任何技術障礙。</p>
                     </div>
                 </div>
@@ -459,13 +470,13 @@ function changeType(num) {
                     </div>
                     <div class="col-12 text-center p-5"><h6 class="lh-lg">” 您的網路節目將擁有無與倫比的視覺效果和聲音質量，同時提供給觀眾一個流暢且互動性強的觀看體驗。 ”<br>” 讓我們一起打造令人難忘的網路直播節目，拓展觀眾群，提升品牌影響力。 ”</h6></div>
                     <div class="col-sm-12 col-md-6 p-3">
-                        <h5 class="mb-4">直播專家</h5>
+                        <h5 class="my-4">直播專家</h5>
                         <p class="lh-lg">在這個數位內容爆炸的時代，網路節目的直播成為了吸引觀眾、增加互動的重要方式。我們提供全方位的網路節目直播工程服務，涵蓋專業導播、高級設備運用、精準的拍攝技術、周到的流程規劃及創意腳本設計，確保每一次直播都能達到最佳表現。</p>
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
                     </div>
                     <div class="col-sm-12 col-md-6 p-3">
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
-                        <h5 class="mb-4">高效應變</h5>
+                        <h5 class="my-4">高效應變</h5>
                         <p class="lh-lg">我們的專業團隊由業界頂尖的導播和技術人員組成，擁有豐富的直播經驗和創意能力，能夠應對各種直播挑戰，從複雜的技術設置到緊張的現場調度。無論是談話節目、遊戲直播、教育講座還是娛樂表演，我們都能提供量身定制的解決方案，讓您的節目在網路上脫穎而出。</p>
                     </div>
                 </div>
@@ -485,13 +496,13 @@ function changeType(num) {
                     </div>
                     <div class="col-12 text-center p-5"><h6 class="lh-lg">” 為您的品牌量身打造吸引人的內容策略，並通過引人入勝的文章加強與目標群體的連接。 ”<br>” 注重粉絲的互動管理，確保每一次互動都能增進粉絲對品牌的好感和忠誠度。 ”</h6></div>
                     <div class="col-sm-12 col-md-6 p-3">
-                        <h5 class="mb-4">脫穎而出</h5>
+                        <h5 class="my-4">脫穎而出</h5>
                         <p class="lh-lg">社群媒體已成為企業與客戶溝通的重要橋樑。我們專業的社群媒體經營團隊提供從內容創建、文章撰寫到粉絲互動的全面服務，幫助您的品牌在競爭激烈的市場中脫穎而出</p>
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
                     </div>
                     <div class="col-sm-12 col-md-6 p-3">
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
-                        <h5 class="mb-4">回味無窮</h5>
+                        <h5 class="my-4">回味無窮</h5>
                         <p class="lh-lg">無論您希望提高品牌知名度、增強客戶忠誠度，還是推動銷售，我們的社群媒體管理服務都能提供有效的解決方案。選擇我們，讓您的社群媒體帳號成為品牌故事的生動舞台，創造持久的品牌價值。</p>
                     </div>
                 </div>
@@ -509,13 +520,13 @@ function changeType(num) {
                     </div>
                     <div class="col-12 text-center p-5"><h6 class="lh-lg">” 您將得到一個完整的廣告解決方案，不僅提升品牌知名度和市場份額，同時也最大化您的投資效益。 ”<br>” 讓我們一起打造有影響力的廣告，激發市場潛力，實現業務增長。 ”</h6></div>
                     <div class="col-sm-12 col-md-6 p-3">
-                        <h5 class="mb-4">最大效能</h5>
+                        <h5 class="my-4">最大效能</h5>
                         <p class="lh-lg">一場成功的廣告投放可以顯著提升品牌的視覺影響力並直接促進銷售。我們提供全面的廣告投放服務，包括廣告規劃、預算管理和投放目標設計，確保您的廣告活動能在正確的時間、正確的地點以及對的人群中發揮最大效能。</p>
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
                     </div>
                     <div class="col-sm-12 col-md-6 p-3">
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
-                        <h5 class="mb-4">精準投放</h5>
+                        <h5 class="my-4">精準投放</h5>
                         <p class="lh-lg">我們的專業團隊擁有豐富的市場經驗和數據分析能力，能夠根據您的業務需求和市場趨勢，設計出最合適的廣告投放策略。從選擇適合的廣告平台到確定精確的目標受眾，再到預算的優化配置，我們確保每一筆投資都能帶來最佳的回報。</p>
                     </div>
                 </div>
@@ -534,13 +545,13 @@ function changeType(num) {
                     </div>
                     <div class="col-12 text-center p-5"><h6 class="lh-lg">” 您將得到一個完整的廣告解決方案，不僅提升品牌知名度和市場份額，同時也最大化您的投資效益。 ”<br>” 讓我們一起打造有影響力的廣告，激發市場潛力，實現業務增長。 ”</h6></div>
                     <div class="col-sm-12 col-md-6 p-3">
-                        <h5 class="mb-4">最大效能</h5>
+                        <h5 class="my-4">最大效能</h5>
                         <p class="lh-lg">一場成功的廣告投放可以顯著提升品牌的視覺影響力並直接促進銷售。我們提供全面的廣告投放服務，包括廣告規劃、預算管理和投放目標設計，確保您的廣告活動能在正確的時間、正確的地點以及對的人群中發揮最大效能。</p>
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
                     </div>
                     <div class="col-sm-12 col-md-6 p-3">
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
-                        <h5 class="mb-4">精準投放</h5>
+                        <h5 class="my-4">精準投放</h5>
                         <p class="lh-lg">我們的專業團隊擁有豐富的市場經驗和數據分析能力，能夠根據您的業務需求和市場趨勢，設計出最合適的廣告投放策略。從選擇適合的廣告平台到確定精確的目標受眾，再到預算的優化配置，我們確保每一筆投資都能帶來最佳的回報。</p>
                     </div>
                 </div>
@@ -558,13 +569,13 @@ function changeType(num) {
                     </div>
                     <div class="col-12 text-center p-5"><h6 class="lh-lg">” 讓我們一起塑造品牌的獨特故事，透過有效的口碑行銷策略，實現品牌價值的最大化。 ”<br>” 我們相信，精確的客群分析與創新的行銷方法是提升品牌口碑的核心。 ”</h6></div>
                     <div class="col-sm-12 col-md-6 p-3">
-                        <h5 class="mb-4">策略規劃</h5>
+                        <h5 class="my-4">策略規劃</h5>
                         <p class="lh-lg">口碑行銷是品牌建立和維護與消費者關係的關鍵策略。我們專注於提供全方位的口碑行銷服務，包括策略規劃、預算分配、網紅合作選擇以及深入的客群分析，確保您的品牌能在競爭激烈的市場中突出重圍。</p>
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
                     </div>
                     <div class="col-sm-12 col-md-6 p-3">
                         <img src="~assets/images/sharkingHand.jpg" class="img-fluid" alt=""/>
-                        <h5 class="mb-4">品牌效力</h5>
+                        <h5 class="my-4">品牌效力</h5>
                         <p class="lh-lg">我們的專業團隊具備深厚的市場洞察力和豐富的行銷經驗，能夠根據品牌特性和目標市場，制定出最適合的行銷策略。通過與適合的網紅合作，我們不僅能幫助品牌建立正面的公眾形象，還能有效擴大品牌影響力並吸引目標客群</p>
                     </div>
                 </div>
