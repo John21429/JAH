@@ -165,31 +165,42 @@ function changeType(num) {
                         <small>#觀點獨特，每一剪都是藝術</small>
                         <small>#精彩後製，讓畫面說話</small>
                     </div> -->
-                    <div class="col-12 pe-lg-3 pb-lg-3"><h5 class="lh-lg">” 我們的專業團隊搭配頂尖設備，精心製作每部作品，從腳本到拍攝，確保完美呈現品牌精神。 ”<br>” 我們相信，只有每個環節都達到完美，客戶才能展現理想中的影片效果。 ”</h5></div>
+                    <div class="col-12 pe-lg-3 pb-lg-3 text-center" v-aos="['animate__flipInX']" data-aos-delay="0.4s" data-aos-duration="1s"><h5 class="lh-lg">” 我們的專業團隊搭配頂尖設備，精心製作每部作品，從腳本到拍攝，確保完美呈現品牌精神。 ”<br>” 我們相信，只有每個環節都達到完美，客戶才能展現理想中的影片效果。 ”</h5></div>
                     <div class="col-sm-12 col-md-6 p-3">
-                        <h5 class="">關鍵工具</h5>
-                        <small class="text-body-secondary">#腳本到銀幕，專業創意無限</small>
-                        <p class="lh-lg mt-2">在這個快節奏的數位時代，短影音已經成為傳達信息、吸引觀眾、並加強品牌影響力的關鍵工具。我們專注於提供全方位的短影音製作服務，從創意發想、腳本撰寫、拍攝製作到後期剪輯和效果處理，每一步都追求完美。</p>
-                        <img src="~assets/images/serviceList/shortVideo.jpg" class="img-fluid" alt=""/>
+                        <div class="bg-light p-4">
+                            <h5 class="" v-aos="['animate__zoomIn']" data-aos-delay="0.1s" data-aos-duration="1s">關鍵工具</h5>
+                            <small class="text-body-secondary">#腳本到銀幕，專業創意無限</small>
+                            <p class="lh-lg mt-2">在這個快節奏的數位時代，短影音已經成為傳達信息、吸引觀眾、並加強品牌影響力的關鍵工具。我們專注於提供全方位的短影音製作服務，從創意發想、腳本撰寫、拍攝製作到後期剪輯和效果處理，每一步都追求完美。</p>
+                        </div>
+                        <div class="position-relative">
+                            <img src="~assets/images/serviceList/shortVideo.jpg" class="img-fluid shortVideo position-relative z-3" alt=""/>
+                            <img src="~assets/images/serviceList/shortVideo1.jpg" class="img-fluid shortVideo1 position-absolute start-0 top-0 z-1" alt=""/>
+                        </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 p-3">
-                        <img src="~assets/images/serviceList/shortVideo1.jpg" class="img-fluid" alt=""/>
-                        <h5 class="mt-3">絕佳夥伴</h5>
-                        <small class="text-body-secondary">#從策劃到剪輯，一氣呵成</small>
-                        <p class="lh-lg mt-2">無論是推廣企業品牌，還是講述一個引人注目的故事，我們的短影音製作服務都能幫助您的品牌在競爭激烈的市場中脫穎而出。我們不僅僅是您的服務提供商，更是您在視覺創意旅程中的夥伴。讓我們一起攜手，將您的想法轉化為能夠觸動人心的影片，共創卓越成果。</p>
+                    <div class="col-sm-12 col-md-6 p-3 mt-5">
+                        <div class="position-relative">
+                            <img src="~assets/images/serviceList/shortVideo2.jpg" class="img-fluid shortVideo2 position-relative z-3" alt=""/>
+                            <img src="~assets/images/serviceList/shortVideo3.jpg" class="img-fluid shortVideo3 position-absolute start-0 top-0 z-1" alt=""/>
+                        </div>
+                        <div class="bg-light p-4">
+                            <h5 class="" v-aos="['animate__zoomIn']" data-aos-delay="0.1s" data-aos-duration="1s">絕佳夥伴</h5>
+                            <small class="text-body-secondary">#從策劃到剪輯，一氣呵成</small>
+                            <p class="lh-lg mt-2">無論是推廣企業品牌，還是講述一個引人注目的故事，我們的短影音製作服務都能幫助您的品牌在競爭激烈的市場中脫穎而出。我們不僅僅是您的服務提供商，更是您在視覺創意旅程中的夥伴。讓我們一起攜手，將您的想法轉化為能夠觸動人心的影片，共創卓越成果。</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div v-show="showType == 0" class="tab-pane fade" id="pills-video-3" role="tabpanel" aria-labelledby="pills-video-3-tab" tabindex="0">
                 <h2 class="lh-lg text-light">產品功能影音</h2>
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 position-relative">
                         <img src="~assets/images/swiper4.png" class="img-fluid" alt=""/>
-                        <div class="d-flex">
-                            <small class="text-body-secondary me-4">#每一個產品，都有一個故事</small>
+                        <h3 class="position-absolute productTag1 text-light" v-aos="['animate__fadeInUp']" data-aos-delay="0.4s" data-aos-duration="1s">每一個產品，都有一個故事</h3>
+                        <!-- <div class="d-flex">
+
                             <small class="text-body-secondary me-4 d-none d-lg-block">#精細剪輯，功能一目了然</small>
                             <small class="text-body-secondary me-4 d-none d-lg-block">#功能展示，讓你的產品說話</small>
-                        </div>
+                        </div> -->
                     </div>
                     <!-- <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-between">
                         <h5></h5>
@@ -198,14 +209,14 @@ function changeType(num) {
                         <h4 class="lh-lg text-light">精細剪輯，功能一目了然</h4>
                         <h5></h5>
                     </div> -->
-                    <div class="col-12 text-center p-3 p-lg-5"><h6 class="lh-lg">” 從微妙的產品細節到整體應用演示，我們都能夠提供高質量的視覺表達，幫助您的產品在市場上脫穎而出。 ”<br>” 結合最先進的攝影設備和剪輯技術，確保每個功能都能被清晰且吸引人地呈現。 ”</h6></div>
+                    <div class="col-12 text-center p-3 p-lg-5" v-aos="['animate__fadeInUp']" data-aos-delay="0.4s" data-aos-duration="1s"><h6 class="lh-lg">” 從微妙的產品細節到整體應用演示，我們都能夠提供高質量的視覺表達，幫助您的產品在市場上脫穎而出。 ”<br>” 結合最先進的攝影設備和剪輯技術，確保每個功能都能被清晰且吸引人地呈現。 ”</h6></div>
                     <div class="col-sm-12 col-md-6 p-3">
                         <h5 class="mb-3">讓產品說話</h5>
                         <p class="lh-lg">在競爭激烈的市場中，產品功能影片是展示您產品優勢的關鍵。我們提供專業的產品功能影片製作服務，從概念規劃、腳本撰寫到影片拍攝和後期製作，每一步驟都致力於精確展現您產品的獨特功能和應用。</p>
-                        <img src="~assets/images/serviceList/product.jpg" class="img-fluid" alt=""/>
+                        <img src="~assets/images/serviceList/product.jpg" class="img-fluid" alt="" v-aos="['animate__flipInX']" data-aos-delay="0.4s" data-aos-duration="1s" />
                     </div>
                     <div class="col-sm-12 col-md-6 p-3">
-                        <img src="~assets/images/serviceList/product1.jpg" class="img-fluid" alt=""/>
+                        <img src="~assets/images/serviceList/product1.jpg" class="img-fluid" alt="" v-aos="['animate__flipInX']" data-aos-delay="0.4s" data-aos-duration="1s" />
                         <h5 class="my-3">展現產品力</h5>
                         <p class="lh-lg">無論您是希望解釋複雜的技術細節，還是展示產品的實際應用，我們都能提供量身定製的解決方案。讓我們協助您通過強有力的視覺敘事，增強客戶對產品功能的理解和興趣，從而推動銷售和品牌忠誠度。</p>
                     </div>
@@ -227,10 +238,10 @@ function changeType(num) {
                     <div class="col-sm-12 col-md-6 p-3">
                         <h5 class="my-4">紀錄感動的瞬間</h5>
                         <p class="lh-lg">無論是大型企業活動、家庭聚會還是公共表演，我們都能確保每一個重要瞬間都被紀錄下來。從動態的舞台表演到觀眾的互動反應，每一個鏡頭都傳達著活動的精神與情感。</p>
-                        <img src="~assets/images/serviceList/boxing.jpg" class="img-fluid" alt=""/>
+                        <img src="~assets/images/serviceList/act1.jpg" class="img-fluid" alt=""/>
                     </div>
                     <div class="col-sm-12 col-md-6 p-3">
-                        <img src="~assets/images/serviceList/activityShow.jpg" class="img-fluid" alt=""/>
+                        <img src="~assets/images/serviceList/act2.jpg" class="img-fluid" alt=""/>
                         <h5 class="my-4">捕捉關鍵的時刻</h5>
                         <p class="lh-lg">活動側拍紀錄影片不僅是捕捉事件，更是記錄情感與故事的藝術。我們提供從預規劃、腳本發展到影片拍攝及後期製作的全程專業服務，專注於捕捉那些定義您活動的關鍵時刻</p>
                     </div>

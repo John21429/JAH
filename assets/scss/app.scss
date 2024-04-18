@@ -222,15 +222,15 @@ body{
     background-color:#5d5d5d;
     color: #fff;
     width: 90vw;
-    max-height: 80vh;
+    // max-height: 80vh;
     padding: 2rem;
     margin: 5rem auto;
     p{
       line-height: 3rem;
     }
     .bigImg{
-      height: 60%;
-      width: auto;
+      max-height: 40vh;
+      // width: auto;
       box-sizing: border-box;
     }
     .banner img{
@@ -238,7 +238,8 @@ body{
       height: 100%;
     }
     .cardBanner{
-      max-width: 300px;
+      max-width: 250px;
+      max-height: 250px;
     }
   }
   
@@ -462,4 +463,18 @@ body{
   --bs-nav-link-hover-color:#{$color-text-secondary};
 }
 
-
+.shortVideo, .shortVideo2{
+  z-index: 3;
+  transition: 0.7s;
+  &:hover{
+    opacity: 0;
+  }
+}
+.shortVideo1, .shortVideo13{
+  transition: 0.7s;
+}
+.productTag1{
+  // background:#{$color-text-secondary};
+  bottom: 5%;
+  left: 5%;
+}
